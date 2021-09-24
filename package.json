@@ -20,7 +20,8 @@
   "scripts": {
     "start": "node ./bin/http-server",
     "test": "tap --reporter=spec test/*.test.js",
-    "test-watch": "tap --reporter=spec --watch test/*.test.js"
+    "test-watch": "tap --reporter=spec --watch test/*.test.js",
+    "test-watch-secure": "tap --reporter=spec --watch test/secure.test.js"
   },
   "files": [
     "lib",
@@ -92,6 +93,7 @@
     "http-proxy": "^1.18.0",
     "mime": "^1.6.0",
     "minimist": "^1.2.5",
+    "nodemon": "^2.0.13",
     "opener": "^1.5.1",
     "portfinder": "^1.0.25",
     "secure-compare": "3.0.1",
@@ -104,6 +106,7 @@
     "express": "^4.16.3",
     "mkdirp": "^0.5.0",
     "request": "^2.88.2",
+    "selfsigned": "^1.10.11",
     "tap": "^14.11.0"
   },
   "bugs": {
